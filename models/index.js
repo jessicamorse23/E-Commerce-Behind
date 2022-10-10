@@ -33,4 +33,4 @@ module.exports = {
   ProductTag,
 };
 
-// I found the code for this model index.js in module 13.23 - one-to-many
+// code for this model index.js in module 13.23 - one-to-many
