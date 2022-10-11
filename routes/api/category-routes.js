@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
   Category.findAll({
     include: {
       model: Product,
-      attributes: ["id", "productName", "price", "stock", "categoryId"],
+      attributes: ["id", "product_name", "price", "stock", "category_id"],
     },
   })
     .then((categoryData) => {
@@ -34,7 +34,7 @@ router.get("/:id", (req, res) => {
     },
     include: {
       model: Product,
-      attributes: ["id", "productName", "price", "stock", "categoryId"],
+      attributes: ["id", "product_name", "price", "stock", "category_id"],
     },
   })
     .then((categoryData) => {
