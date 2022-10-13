@@ -11,7 +11,7 @@ Tag.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true,
+      autoIncrement: true
     },
 
     tag_name: {
@@ -24,7 +24,7 @@ Tag.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "tag",
+    modelName: "tag"
   }
 );
 

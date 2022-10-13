@@ -16,7 +16,7 @@ Category.init(
     
       category_name: {
         type: DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: false
       }
   },
 
@@ -25,7 +25,7 @@ Category.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'category',
+    modelName: 'category'
   }
 );
 
