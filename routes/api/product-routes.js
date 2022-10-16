@@ -17,7 +17,10 @@ router.get('/', (req, res) => {
       },
       {
         model: Tag, 
-        attributes: ["tag_name"]
+        attributes: ["tag_name"],
+        through: "ProductTag",
+        as: "tags"
+
       }
     ]
   }).then(dbDataReturns => res.json(dbDataReturns))
@@ -39,8 +42,13 @@ router.get('/:id', (req, res) => {
     include: [
       {
         model: Category,
-        attributes: ["category_name"]
+        attributes: ["id", "category_name"]
       },
+      {
+        model: Tag,
+        attributes: ["tag_name"],
+        as: "tags"
+      }
     ]
   }).then(dbDataReturns => {
     if (!dbDataReturns) {
