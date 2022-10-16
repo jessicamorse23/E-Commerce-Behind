@@ -3,7 +3,7 @@ const sequelize = require('../../config/connection');
 const { Category, Product } = require('../../models');
 
 // Module 13 - 7&8
-
+// I worked with a tutor - Patrick Meehan - to fix and debug this code. We went over it line by line. 
 // The `/api/categories` endpoint
 
 router.get('/', (req, res) => {

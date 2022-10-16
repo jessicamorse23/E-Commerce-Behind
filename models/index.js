@@ -1,4 +1,5 @@
 // import models
+// I worked with a tutor - Patrick Meehan - to fix and debug this code. We went over it line by line. 
 const Product = require('./Product');
 const Category = require('./Category');
 const Tag = require('./Tag');
